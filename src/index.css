@@ -22,6 +22,8 @@ body {
 }
 
 .search-btn {
-  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  background: #ff444a;
+}
+.search-btn:hover {
   background: #ff444a;
 }

@@ -5,6 +5,8 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/layout/Layout.jsx";
 import ErrorPage from "./components/ErrorPage.jsx";
+import DonationDetails from "./components/DonationDetails.jsx";
+import Donations from "./components/Donations.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,11 +21,16 @@ const router = createBrowserRouter([
       },
       {
         path: "/donation",
-        element: <div>Welcome to Donation</div>,
+        element: <Donations></Donations>,
       },
       {
         path: "/statistics",
         element: <div>Welcome to statistics</div>,
+      },
+      {
+        path: "/details/:ID",
+        element: <DonationDetails></DonationDetails>,
+        loader: () => fetch("cards.json"),
       },
     ],
   },
