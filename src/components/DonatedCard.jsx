@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const DonatedCard = ({ donated }) => {
   return (
@@ -25,11 +26,13 @@ const DonatedCard = ({ donated }) => {
               ${donated.donationPrice.toFixed(2)}
             </p>
             <div className="">
-              <button
-                className={`btn text-white capitalize bg-[${donated.textColor}] hover:bg-[${donated.textColor}]`}
-              >
-                View Details
-              </button>
+              <Link to={`/details/${donated.id}`} >
+                <button
+                  className={`btn text-white capitalize bg-[${donated.textColor}] hover:bg-[${donated.textColor}]`}
+                >
+                  View Details
+                </button>
+              </Link>
             </div>
           </div>
         </div>
