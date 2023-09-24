@@ -3,13 +3,12 @@ import PropTypes from "prop-types";
 const Card = ({ card }) => {
   const { title, category, cardImage, backgroundColor, textColor } = card;
 
-  console.log(backgroundColor, textColor);
   return (
     <div className={`bg-[${backgroundColor}] rounded-md`}>
       <img className="object-cover w-full" src={cardImage} alt="" />
       <div className={`p-3`}>
         <div
-          className={`badge capitalize border-none font-medium bg-[${backgroundColor}]`}
+          className={`badge capitalize border-none p-2 mb-2 rounded font-medium bg-[${backgroundColor}] text-[${textColor}] `}
         >
           {category}
         </div>
