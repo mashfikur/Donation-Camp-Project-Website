@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
+import Card from "./Card";
 
 const Cards = ({ cards }) => {
   return (
     <div className="container mx-auto xl:my-24">
-      <h3 className="text-center">Cards : {cards.length} </h3>
-      <div>
-        {
-            cards.map(card=><li key={card.id} >Hello</li>)
-        }
+      <div className="grid grid-cols-4 gap-5">
+        {cards.map((card) => (
+          <Card key={card.id} card={card}></Card>
+        ))}
       </div>
     </div>
   );
