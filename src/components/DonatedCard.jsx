@@ -5,26 +5,26 @@ const DonatedCard = ({ donated }) => {
     <div>
       <div>
         <div
-          className={`card card-side bg-[${donated.backgroundColor}] rounded-md`}
+          className={`flex flex-col  lg:flex-row lg:gap-4 bg-[${donated.backgroundColor}] rounded-md`}
         >
-          <div>
+          <div className="lg:flex-1">
             <img
               src={donated.cardImage}
               alt="Movie"
-              className="h-full rounded-md"
+              className="h-full rounded-md w-full"
             />
           </div>
-          <div className="card-body">
-            <h3
-              className={`p-1 bg-[${donated.backgroundColor}] text-[${donated.textColor}] w-3/12 text-center rounded-md capitalize`}
+          <div className="py-3 px-2 space-y-3 lg:flex-1">
+            <div
+              className={`badge capitalize border-none p-2 mb-2 rounded font-medium bg-[${donated.backgroundColor}] text-[${donated.textColor}] `}
             >
               {donated.category}
-            </h3>
+            </div>
             <h2 className="font-semibold text-xl">{donated.title}</h2>
             <p className={`text-[${donated.textColor}] font-semibold`}>
               ${donated.donationPrice.toFixed(2)}
             </p>
-            <div className="card-actions justify-start">
+            <div className="">
               <button
                 className={`btn text-white capitalize bg-[${donated.textColor}] hover:bg-[${donated.textColor}]`}
               >

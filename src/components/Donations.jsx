@@ -36,7 +36,7 @@ const Donations = () => {
 
   return (
     <div className="container mx-auto my-8">
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 p-4 xl:p-0 md:grid-cols-2 gap-5">
         {displayDonations.slice(0, displayCount).map((donated) => (
           <DonatedCard key={donated.id} donated={donated}></DonatedCard>
         ))}
