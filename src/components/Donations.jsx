@@ -5,6 +5,8 @@ import DonatedCard from "./DonatedCard";
 const Donations = () => {
   const [allDonations, setAllDonations] = useState([]);
   const [displayDonations, setDisplayDonations] = useState([]);
+  const [displayCount, setDisplayCount] = useState(4);
+  const [hide, setHide] = useState(false);
 
   useEffect(() => {
     fetch("cards.json")
@@ -27,12 +29,27 @@ const Donations = () => {
     }
   }, [allDonations]);
 
+  const handleClick = () => {
+    setDisplayCount(displayDonations.length);
+    setHide(!hide);
+  };
+
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto my-8">
       <div className="grid grid-cols-2 gap-5">
-        {displayDonations.map((donated) => (
+        {displayDonations.slice(0, displayCount).map((donated) => (
           <DonatedCard key={donated.id} donated={donated}></DonatedCard>
         ))}
+      </div>
+      <div className="flex flex-col items-center mt-8">
+        <button
+          onClick={() => handleClick()}
+          className={`btn capitalize text-white bg-[green] hover:bg-[green] ${
+            hide ? "hidden" : ""
+          }`}
+        >
+          See All
+        </button>
       </div>
     </div>
   );
