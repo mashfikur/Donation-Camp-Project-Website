@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getDonations } from "../localStorage";
+import DonatedCard from "./DonatedCard";
 
 const Donations = () => {
   const [allDonations, setAllDonations] = useState([]);
@@ -28,10 +29,10 @@ const Donations = () => {
 
   return (
     <div className="container mx-auto">
-      <div>
-        {
-            displayDonations.map(donations=><li>hello</li>)
-        }
+      <div className="grid grid-cols-2 gap-5">
+        {displayDonations.map((donated) => (
+          <DonatedCard key={donated.id} donated={donated}></DonatedCard>
+        ))}
       </div>
     </div>
   );
