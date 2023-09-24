@@ -8,11 +8,20 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  font-family: 'Inter', sans-serif;
+body {
+  font-family: "Inter", sans-serif;
 }
 
-.active{
-  color: #FF444A;
+.active {
+  color: #ff444a;
   border-bottom: 2px solid;
+}
+
+.hero-bg {
+  background-image: url("https://i.ibb.co/YQPPVvp/hero-bg.jpg");
+}
+
+.search-btn {
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  background: #ff444a;
 }

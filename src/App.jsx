@@ -1,9 +1,10 @@
 import "./App.css";
+import Banner from "./components/Banner";
 
 function App() {
   return (
     <>
-      <h1 className="text-center"></h1>
+      <Banner></Banner>
     </>
   );
 }
