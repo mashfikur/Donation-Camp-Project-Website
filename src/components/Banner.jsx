@@ -4,7 +4,7 @@ const Banner = () => {
       <div className="">
         <div className="hero hero-bg">
           <div className="hero-overlay bg-opacity-90 bg-white"></div>
-          <div className="hero-content py-14 xl:py-32 flex flex-col text-center text-black">
+          <div className="hero-content py-14 xl:py-44 flex flex-col text-center text-black">
             <h1 className="mb-5 text-5xl font-bold">
               I Grow By Helping People In Need
             </h1>
