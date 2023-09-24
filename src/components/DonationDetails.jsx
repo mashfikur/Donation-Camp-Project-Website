@@ -33,7 +33,7 @@ const DonationDetails = () => {
           <div className=" bg-black w-full px-4 py-8 bg-opacity-60">
             <button
               onClick={() => handleClick(selected.id)}
-              className="btn search-btn border-none text-white capitalize font-semibold rounded-md"
+              className={`btn bg-[${selected.textColor}] hover:bg-[${selected.textColor}] border-none text-white capitalize font-semibold rounded-md`}
             >
               Donate ${selected.donationPrice}
             </button>
