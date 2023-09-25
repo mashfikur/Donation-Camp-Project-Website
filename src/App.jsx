@@ -3,7 +3,6 @@ import "./App.css";
 import Banner from "./components/Banner";
 import Cards from "./components/Cards";
 import { useRef, useState } from "react";
-import toast from "react-hot-toast";
 
 function App() {
   const cards = useLoaderData();
@@ -14,7 +13,6 @@ function App() {
   const handleSearch = () => {
     const inputValue = searchBtn.current.value;
     setSearchText(inputValue);
-    // searchBtn.current.value = "";
   };
 
   return (

@@ -1,18 +1,27 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveDonations } from "../localStorage";
-import { useEffect } from "react";
+import { getDonations, saveDonations } from "../localStorage";
+import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
 const DonationDetails = () => {
   const allCards = useLoaderData();
+  const [donated, SetDonated] = useState(false);
 
   const { ID } = useParams();
 
   const selected = allCards.find((card) => card.id === ID);
   const handleClick = (id) => {
     saveDonations(id);
-    toast.success("You have Donated Successfully");
+    toast.success("Thank you for Donating");
+    SetDonated(true);
   };
+
+  useEffect(() => {
+    const saved = getDonations();
+    console.log(saved);
+    const alredyDone = saved.includes(ID);
+    SetDonated(alredyDone);
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -33,12 +42,15 @@ const DonationDetails = () => {
           <div className=" bg-black w-full px-4 py-8 bg-opacity-60">
             <button
               onClick={() => handleClick(selected.id)}
-              className={`btn border-none text-white capitalize font-semibold rounded-md`}
-              style={{ background: `${selected.textColor}` }}
+              className={`btn border-none text-white capitalize font-semibold rounded-md ${
+                donated && "btn-disabled"
+              } `}
+              style={{ background: `${selected.textColor}`, color: "white" }}
             >
-              Donate ${selected.donationPrice}
+              {donated
+                ? `Donated ❤ `
+                : `Donate $${selected.donationPrice}`}
             </button>
-
           </div>
         </div>
         <div className="mt-8 mb-24 ">

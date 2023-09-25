@@ -36,7 +36,7 @@ const Banner = ({ searchBtn, handleSearch }) => {
 
 Banner.propTypes = {
   searchBtn: PropTypes.object,
-  handleSearch: PropTypes.function,
+  handleSearch: PropTypes.func,
 };
 
 export default Banner;
