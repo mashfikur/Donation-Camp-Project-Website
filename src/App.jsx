@@ -12,7 +12,8 @@ function App() {
 
   const handleSearch = () => {
     const inputValue = searchBtn.current.value;
-    setSearchText(inputValue);
+    const searchText = inputValue.toLowerCase();
+    setSearchText(searchText);
   };
 
   return (

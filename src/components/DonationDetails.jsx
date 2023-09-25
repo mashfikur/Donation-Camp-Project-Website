@@ -47,9 +47,7 @@ const DonationDetails = () => {
               } `}
               style={{ background: `${selected.textColor}`, color: "white" }}
             >
-              {donated
-                ? `Donated ❤ `
-                : `Donate $${selected.donationPrice}`}
+              {donated ? `Donated ❤ ` : `Donate $${selected.donationPrice}`}
             </button>
           </div>
         </div>
