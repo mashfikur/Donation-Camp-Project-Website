@@ -6,14 +6,14 @@ const Card = ({ card }) => {
   const navigate = useNavigate();
 
   const handleClick = (id) => {
-    navigate(`/details/${id}`);
+    navigate(`/${id}`);
   };
 
   return (
     <div
       onClick={() => handleClick(id)}
       className={`rounded-md`}
-      style={{background:`${backgroundColor}`}}
+      style={{ background: `${backgroundColor}` }}
     >
       <img className="object-cover w-full" src={cardImage} alt="" />
       <div className={`p-3`}>
@@ -24,10 +24,12 @@ const Card = ({ card }) => {
           {category}
         </div>
 
-        <h3 
-        className={`font-semibold text-xl`}
-        style={{color:`${textColor}`}}
-        >{title}</h3>
+        <h3
+          className={`font-semibold text-xl`}
+          style={{ color: `${textColor}` }}
+        >
+          {title}
+        </h3>
       </div>
     </div>
   );

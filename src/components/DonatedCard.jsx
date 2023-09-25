@@ -34,7 +34,7 @@ const DonatedCard = ({ donated }) => {
               ${donated.donationPrice.toFixed(2)}
             </p>
             <div className="">
-              <Link to={`/details/${donated.id}`}>
+              <Link to={`/${donated.id}`}>
                 <button
                   style={{ background: `${donated.textColor}` }}
                   className={`btn text-white capitalize bg-[${donated.textColor}] hover:bg-[${donated.textColor}]`}
