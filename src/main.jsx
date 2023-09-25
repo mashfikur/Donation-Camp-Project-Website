@@ -7,6 +7,7 @@ import Layout from "./components/layout/Layout.jsx";
 import ErrorPage from "./components/ErrorPage.jsx";
 import DonationDetails from "./components/DonationDetails.jsx";
 import Donations from "./components/Donations.jsx";
+import Statistics from "./components/Statistics.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/statistics",
-        element: <div>Welcome to statistics</div>,
+        element: <Statistics></Statistics>,
       },
     ],
   },

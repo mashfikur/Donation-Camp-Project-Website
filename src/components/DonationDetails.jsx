@@ -43,11 +43,7 @@ const DonationDetails = () => {
         </div>
         <div className="mt-8 mb-24 ">
           <h3 className="font-semibold text-4xl mb-4">{selected.title}</h3>
-          <p className="text-[#0b0b0bb3]">
-            {selected.description}
-            {selected.description}
-            {selected.description}
-          </p>
+          <p className="text-[#0b0b0bb3]">{selected.description}</p>
         </div>
       </div>
     </div>

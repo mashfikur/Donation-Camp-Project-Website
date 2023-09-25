@@ -30,7 +30,7 @@
         "description": "Support our mission to provide nutritious meals to those in need. Your generous donation helps ensure that no one in our community goes to bed hungry, fostering a healthier and more nourished population.",
         "donationPrice": 220,
         "cardImage": "https://i.ibb.co/wcZQPrF/Food.png",
-        "coverImage": "https://i.ibb.co/wcZQPrF/Food.png"
+        "coverImage": "https://i.ibb.co/3kbmNjk/cover-image-3.jpg"
     },
     {
         "id": "4",
@@ -41,7 +41,7 @@
         "description": "Help us fight hunger in your community. Your donation can feed a family and make a direct impact on alleviating the suffering caused by food insecurity, ensuring that everyone has access to nourishing meals.",
         "donationPrice": 325,
         "cardImage": "https://i.ibb.co/wcZQPrF/Food.png",
-        "coverImage": "https://i.ibb.co/wcZQPrF/Food.png"
+        "coverImage": "https://i.ibb.co/3kbmNjk/cover-image-3.jpg"
     },
     {
         "id": "5",
@@ -52,7 +52,7 @@
         "description": "Support access to quality healthcare for everyone. Your donation can save lives by enabling individuals to receive essential medical services and treatments, ensuring a healthier and happier community.",
         "donationPrice": 100,
         "cardImage": "https://i.ibb.co/3WtgVk8/Health.png",
-        "coverImage": "https://i.ibb.co/3WtgVk8/Health.png"
+        "coverImage": "https://i.ibb.co/1zfzFPd/cover-image-2.jpg"
     },
     {
         "id": "6",
@@ -63,7 +63,7 @@
         "description": "Join us in promoting health education and awareness in the community. Your support will empower individuals with knowledge and tools to lead healthier lives, ultimately benefiting the entire community.",
         "donationPrice": 240,
         "cardImage": "https://i.ibb.co/3WtgVk8/Health.png",
-        "coverImage": "https://i.ibb.co/3WtgVk8/Health.png"
+        "coverImage": "https://i.ibb.co/1zfzFPd/cover-image-2.jpg"
     },
     {
         "id": "7",
@@ -85,7 +85,7 @@
         "description": "Help provide clothing to those who lack the basic necessities. Your support ensures that individuals in our community have access to clean and appropriate clothing, enhancing their dignity and well-being.",
         "donationPrice": 320,
         "cardImage": "https://i.ibb.co/ySgPZMG/Clothing.png",
-        "coverImage": "https://i.ibb.co/ySgPZMG/Clothing.png"
+        "coverImage": "https://i.ibb.co/hLRJkcm/cover-image-1.jpg"
     },
     {
         "id": "9",
@@ -107,7 +107,7 @@
         "description": "Contribute to our meal kit program and help families prepare nutritious meals at home. Your support ensures that families have access to wholesome ingredients and can enjoy home-cooked meals together.",
         "donationPrice": 135,
         "cardImage": "https://i.ibb.co/wcZQPrF/Food.png",
-        "coverImage": "https://i.ibb.co/wcZQPrF/Food.png"
+        "coverImage": "https://i.ibb.co/3kbmNjk/cover-image-3.jpg"
     },
     {
         "id": "11",
@@ -118,7 +118,7 @@
         "description": "Support our efforts to provide vaccinations to vulnerable populations. Your donation plays a crucial role in protecting the health of our community and preventing the spread of infectious diseases.",
         "donationPrice": 250,
         "cardImage": "https://i.ibb.co/3WtgVk8/Health.png",
-        "coverImage": "https://i.ibb.co/3WtgVk8/Health.png"
+        "coverImage": "https://i.ibb.co/1zfzFPd/cover-image-2.jpg"
     },
     {
         "id": "12",
@@ -129,6 +129,6 @@
         "description": "Help us keep people warm by donating winter coats for the cold season. Your contribution provides essential protection against the elements and ensures that individuals in our community stay cozy during winter.",
         "donationPrice": 160,
         "cardImage": "https://i.ibb.co/ySgPZMG/Clothing.png",
-        "coverImage": "https://i.ibb.co/ySgPZMG/Clothing.png"
+        "coverImage": "https://i.ibb.co/hLRJkcm/cover-image-1.jpg"
     }
 ]
