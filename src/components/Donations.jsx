@@ -42,14 +42,18 @@ const Donations = () => {
         ))}
       </div>
       <div className="flex flex-col items-center mt-8">
-        <button
-          onClick={() => handleClick()}
-          className={`btn capitalize text-white bg-[green] hover:bg-[green] ${
-            hide ? "hidden" : ""
-          }`}
-        >
-          See All
-        </button>
+        {hide ? (
+          ""
+        ) : (
+          <button
+            onClick={() => handleClick()}
+            className={`btn capitalize text-white bg-[green] hover:bg-[green] ${
+              displayDonations.length <= 4 ? "hidden" : ""
+            }`}
+          >
+            See All
+          </button>
+        )}
       </div>
     </div>
   );
