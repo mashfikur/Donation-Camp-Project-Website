@@ -12,17 +12,22 @@ const Card = ({ card }) => {
   return (
     <div
       onClick={() => handleClick(id)}
-      className={`bg-[${backgroundColor}] rounded-md`}
+      className={`rounded-md`}
+      style={{background:`${backgroundColor}`}}
     >
       <img className="object-cover w-full" src={cardImage} alt="" />
       <div className={`p-3`}>
         <div
-          className={`badge capitalize border-none p-2 mb-2 rounded font-medium bg-[${backgroundColor}] text-[${textColor}] `}
+          style={{ background: `${backgroundColor}`, color: `${textColor}` }}
+          className={`badge capitalize border-none p-2 mb-2 rounded font-medium  `}
         >
           {category}
         </div>
 
-        <h3 className={`font-semibold text-xl text-[${textColor}]`}>{title}</h3>
+        <h3 
+        className={`font-semibold text-xl`}
+        style={{color:`${textColor}`}}
+        >{title}</h3>
       </div>
     </div>
   );
