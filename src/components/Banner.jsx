@@ -1,4 +1,6 @@
-const Banner = () => {
+import PropTypes from "prop-types";
+
+const Banner = ({ searchBtn, handleSearch }) => {
   return (
     <div>
       <div className="">
@@ -11,11 +13,17 @@ const Banner = () => {
             <div className="max-w-sm xl:mt-12">
               <div className="join">
                 <input
+                  ref={searchBtn}
                   type="text"
                   className="input input-bordered focus:outline-none  join-item"
-                  placeholder="Search here...."
+                  placeholder="Search here.... "
+                  defaultValue={"All"}
                 />
-                <button className="btn join-item capitalize text-white border-none  rounded-md search-btn">
+
+                <button
+                  onClick={handleSearch}
+                  className="btn join-item capitalize text-white border-none  rounded-md search-btn"
+                >
                   Search
                 </button>
               </div>
@@ -25,6 +33,11 @@ const Banner = () => {
       </div>
     </div>
   );
+};
+
+Banner.propTypes = {
+  searchBtn: PropTypes.object,
+  handleSearch: PropTypes.function,
 };
 
 export default Banner;

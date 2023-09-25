@@ -1,7 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { saveDonations } from "../localStorage";
 import { useEffect } from "react";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 const DonationDetails = () => {
   const allCards = useLoaderData();
@@ -38,7 +38,7 @@ const DonationDetails = () => {
             >
               Donate ${selected.donationPrice}
             </button>
-            <Toaster></Toaster>
+
           </div>
         </div>
         <div className="mt-8 mb-24 ">
