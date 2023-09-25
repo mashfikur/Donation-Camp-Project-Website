@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import Card from "./Card";
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 
 const Cards = ({ cards, searchText }) => {
   const [filterdCard, setFilteredCard] = useState([]);
@@ -10,7 +11,11 @@ const Cards = ({ cards, searchText }) => {
 
     if (searchText) {
       const filtered = cards.filter((card) => card.category === searchText);
-      setFilteredCard(filtered);
+      if (filtered.length > 0) {
+        setFilteredCard(filtered);
+      } else {
+        toast.error("No category Found like you searched");
+      }
     } else {
       setFilteredCard(newArray);
     }

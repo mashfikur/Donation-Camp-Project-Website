@@ -15,9 +15,8 @@ const Banner = ({ searchBtn, handleSearch }) => {
                 <input
                   ref={searchBtn}
                   type="text"
-                  className="input input-bordered focus:outline-none  join-item"
-                  placeholder="Search here.... "
-                  defaultValue={"All"}
+                  className="input input-bordered focus:outline-none lg:w-[22rem] join-item"
+                  placeholder="Search here...., Click search to show All "
                 />
 
                 <button
