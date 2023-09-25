@@ -49,7 +49,7 @@ const Statistics = () => {
     labels: ["Your Donation", "Total Donation"],
     datasets: [
       {
-        data: [yourTotal, total],
+        data: [yourTotal, (total-yourTotal)],
         backgroundColor: ["#00C49F", "#FF444A"],
       },
     ],
