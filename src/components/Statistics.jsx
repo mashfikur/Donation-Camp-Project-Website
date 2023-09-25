@@ -46,7 +46,7 @@ const Statistics = () => {
   }, [allData, localData]);
 
   const data = {
-    labels: ["Your Donation", "Total Donations"],
+    labels: ["Your Donation", "Total Donation"],
     datasets: [
       {
         data: [yourTotal, total],
@@ -78,8 +78,8 @@ const Statistics = () => {
   });
 
   return (
-    <div className="container mx-auto">
-      <div className="w-1/3 mx-auto">
+    <div className="container mx-auto my-10">
+      <div className="p-3 mx-auto md:w-1/2  xl:w-1/3 ">
         <Pie data={data} options={options}></Pie>
       </div>
     </div>

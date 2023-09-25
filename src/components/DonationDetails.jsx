@@ -18,7 +18,6 @@ const DonationDetails = () => {
 
   useEffect(() => {
     const saved = getDonations();
-    console.log(saved);
     const alredyDone = saved.includes(ID);
     SetDonated(alredyDone);
   });
